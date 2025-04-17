@@ -8,6 +8,9 @@ from RPA.Archive import Archive
 
 
 class Bot:
+
+    """This code done login and signup using credentials and take screenshot of the robot and the reception and then merge them """
+
     def __init__(self):
         self.browser = Selenium()
         self.pdf = PDF()
@@ -71,7 +74,6 @@ class Bot:
         folder_path= os.path.join(os.getcwd(), 'output/Receipt')
         zip_path= os.path.join(os.getcwd(), 'output/Receipt.zip')
         arc.archive_folder_with_zip(folder_path, zip_path)
-
 
 
 bot = Bot()
