@@ -9,7 +9,8 @@ from RPA.Archive import Archive
 
 class Bot:
 
-    """This code done login and signup using credentials and take screenshot of the robot and the reception and then merge them """
+    """Done login and signup using credentials and take screenshot of the robot and the reception and then merge
+    in one PDF file. """
 
     def __init__(self):
         self.browser = Selenium()
